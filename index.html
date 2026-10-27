@@ -3,12 +3,29 @@
 		<head>
             <!--This is shown in the tab area of the webage-->
             <title>Cheat Sheet</title>
+            <style>
+                h1{
+                    text-align: center;
+                    background-color: darkgrey;
+                }
+                nav{
+                    background-color: #bed3fd;
+                    height: 50px;
+                    padding-top: 20px;
+                }
+                .container{
+                    display: flex;
+                    justify-content: space-evenly;
+
+                }
+            </style>
         </head>
  		<body>
             <!--This is a comment This does not get seen on the webpage-->
             
             <div style="text-align: center; font-size: 20px; word-spacing: 5px;">
                 <h1>Table of contents</h1>
+                <nav>
                 <a href="#headings" >Headings</a>
                 <a href="#paragraphs">Paragraphs</a>
                 <a href="#paragraphs">BR tags</a>
@@ -17,230 +34,210 @@
                 <a href="#links">Links</a>
                 <a href="#tables">Tables</a>
                 <a href="#style">Styling Properties</a>
-                <a href="#iframes">iFrame</a>
+                <a href="#iframe">iFrame</a>
                 <a href="#div">Div tags</a>
                 <a href="#span">Span Tags</a>
+                <a href="#semantics">Semantic Elements</a>
+                </nav>
+            </div>
+            <div>
+                <h1>Starter Code: Type this into VS code</h1>
+                <h3>Here's the link: <a href="https://vscode.dev/" target="_blank">VS code</a></h3>
+                <img src="starterCode.png" width="100%">
             </div>
 
             <!--All of the Heading Tags-->
-            <div style="background-color: #FFDCDC;">
-            <h1 style="text-align: center;" id="headings">Heading Tags</h1>
-  
- 			<h1> &lt;h1&gt;h1 is the biggest&lt;/h1&gt;</h1>
-            <h2> &lt;h2&gt;h2 heading is bigger&lt;/h2&gt;</h2>
-            <h3> &lt;h3&gt;h3 heading is big&lt;/h3&gt;</h3>
-            <h4> &lt;h4&gt;h4 heading is small&lt;/h4&gt;</h4>
-            <h5> &lt;h5&gt;h5 heading is smaller&lt;/h5&gt;</h5>
-            <h6> &lt;h6&gt;h6 is the smallest&lt;/h6&gt;</h6>
+             <h1 id="headings">Heading Tags</h1>
+            
+            <div class="container" style="background-color: #FFDCDC;">
+        
+            <div>
+                <h2>Code:</h2>
+                <img src="headingsCode.png">
+            </div>
+            <div>
+                <h2>Outcome:</h2>
+                <img src="headingsOutcome.png">
             <hr>
+            </div>
             </div>
      
 
             <!-- Paragraph Tags -->
-             <div style="background-color: #FFF2EB">
-             <h1 style="text-align: center;" id="paragraphs">Paragraph Tags</h1>
-            <p>&lt;p&gt;This is a paragraph this is where I put regular text using p &lt;/p&gt;</p>
-            <p><em>&lt;p&gt;&lt;em&gt;This is a paragraph with emphasized text using p and em&lt;/em&gt;&lt;/p&gt;</em></p>
-            <p><strong>&lt;p&gt;&lt;strong&gt;This is a paragraph with bolded text using p and strong&lt;/p&gt;&lt;/strong&gt;</strong></p>
+             <h1 id="paragraphs">Paragraph Tags</h1>
+                <div style="background-color: #FFF2EB">
+                    <h2>Code:</h2>
+                    <img src="pCode.png">
+
+                    <h2>Outcome:</h2>
+                    <img src="pOutcome.png" >
+                </div>
+             </div>
             <!--br tags-->
-            <h2 id="paragraphs">br tag</h2>
-            <p>
-                This is &lt;br&gt; <br> 
-                how to break &lt;br&gt;<br> 
-                the lines in text 
-            </p>
+             <h1 id="paragraphs">br tag</h1>
+             <div  class="container" style="background-color: #FFF2EB">
+                <div>
+                    <h2>Code: </h2>
+                    <img src="brCode.png">
+
+                </div>
+                <div>
+                    <h2>Outcome:</h2>
+                    <img src="brOutcome.png">
+
+                </div>
+
+             </div>
+
             <hr>
             </div>
 
             <!--List Tags-->
+            <h1 id="lists">Lists</h1>
             <div style="background-color: #FFE8CD;">
-            <h1 style="text-align: center;" id="lists">Lists</h1>
-            <h2>Ordered List</h2>
-            <ol>
-                <li>Use an ol tag</li>
-                <li>Then use li to list the item</li>
-                <li>Last make sure to include all closing tags</li>
-                <li>Everything in an ordered list has a number</li>
-            </ol>
-
-    
-            <h2>Unordered list</h2>
-            <ul>
-                <li>This is an unordered list</li>
-                <li>Its written almost the same as an ordered list</li>
-                <li>The difference is that it starts with ul</li>
-                <li>And instead of numbers it has bulleted points</li>
-            </ul>
-            <p>Start with &lt;ol&gt; or &lt;ul&gt; with &lt;li&gt; nested inside for every item you list</p>
-            <h3>Here's the code: </h3>
-
-              &lt;h1&gt;Lists&lt;/h1&gt; <br>
-            &lt;h2&gt;Ordered List&lt;/h2&gt; <br>
-            <p>&lt;ol&gt;</p>
-
-            <p style="padding-left: 20px;">
-                &lt;li&gt;Use an ol tag&lt;/li&gt;<br>
-                &lt;li&gt;Then use li to list the item&lt;/li&gt;<br>
-                &lt;li&gt;Last make sure to include all closing tags&lt;/li&gt;<br>
-                &lt;li&gt;Everything in an ordered list has a number&lt;/li&gt;<br>
-            </p>
-            <p>&lt;/ol&gt;</p>
-
-    
-            <p>&lt;h2>Unordered list&lt;/h2&gt;</p>
-            <p>&lt;ul&gt;</p>
-            <p style="padding-left: 20px;">
-                &lt;li&gt;This is an unordered list&lt;/li&gt;<br>
-                &lt;li&gt;Its written almost the same as an ordered list&lt;/li&gt;<br>
-                &lt;li&gt;The difference is that it starts with ul&lt;/li&gt;<br>
-                &lt;li&gt;And instead of numbers it has bulleted points&lt;/li&gt;<br>
-            </p>
-            <p>&lt;/ul&gt;</p>
-            
-            </p>
-            <hr>
+            <div>
+                <h2 style="text-align: center;">Ordered List</h2>
+                <div class="container">
+                <div>
+                    <h3>Code:</h3>
+                    <img src="olCode.png">
+                </div>
+                <div>
+                    <h3>Outcome:</h3>
+                    <img src="olOutcome.png">
+                </div>
+                </div>
+                <hr>
             </div>
+                <h2 style="text-align: center;">Unordered list</h2>
+                <div class="container">
+                <div>
+                    <h3>Code:</h3>
+                    <img src="ulCode.png">
+                </div>
+                <div>
+                    <h3>Outcome:</h3>
+                    <img src="ulOutcome.png">
+                </div>
+            </div>
+   
+            </div>
+            <hr>
             <!--Image Tag-->
             <div style="background-color: #FFD6BA;">
-            <h1 style="text-align: center;" id="images">Image Tag</h1>
-            <img src="grandcanyon.jpg" width="200px" height="100px">
-            <p>You put in an image using img with src and the name of the image. <br>
-                The name of this image is called grandcanyon.jpg <br>
-                The only extensions that can be used with images is .jpeg, .png, and .jpg
-            
-            </p>
-            <p>Example: &lt;img src="grandcanyon.jpg"&gt;</p>
-            <p>To change the width and height you use: <br>
-                &lt;img src="grandcanyon.jpg" width="200px" height="100px"&gt; </p>
-                <hr>
+            <h1 id="images">Image Tag</h1>
+            <div class="container">
+                <div>
+                    <h2>Code: </h2>
+                    <img src="GCCode.png">
+                    <p><strong>Always make sure the file ends in .jpg, .jpeg, or .png !!!!</strong></p>
+
                 </div>
+                <div>
+                    <h2>Outcome: </h2>
+                    <img src="grandcanyon.jpg" width="300px" height="200px">
+                </div>
+            </div>
+        </div>
+        <hr>
+                
             <!--Links-->
             <div style="background-color: #FFDCDC;">
-            <h1 style="text-align: center;">Links</h1>
-            <p>To insert a link you use &lt;a href="[INSERT URL HERE]" &gt;Click this link !&lt;/a&gt;</p>
-            <p>For this example I used <a href="https://classroom.google.com/h/tv" target="_blank"> Google Classroom</a></p>
-            <p>&lt;a href="https://classroom.google.com/h/tv"&gt;Google Classroom&lt;/a&gt;</p>
+            <h1 id="links">Links</h1>
+            <div class="container">
+                <div>
+                    <h2>Code:</h2>
+                    <img src="googleCode.png">
+
+                    <h3>Link:</h3>
+                     <a href="https://classroom.google.com/h/tv" target="_blank"> Google Classroom</a>
+
+                </div>
+                <div>
+                    <h2>Outcome:</h2>
+                    <img src="gLink.png">
+
+                </div>
+            </div>
+            <h1>Linking other webpages</h1>
+            <div class="container">
+                <div>
+                    <h2>Code:</h2>
+                    <img src="webCode.png">
+                    <h3>Link:</h3>
+                    <a href="example.html" target="_blank">Cheat sheet examples</a>
+
+
+                </div>
+                <div>
+                    <h2>Outcome:</h2>
+                    <img src="wLink.png">
+
+                </div>
+            </div>
 
             <hr>
             </div>
             <!--Tables-->
             <div style="background-color: #FFF2EB;">
-            <h1 style="text-align: center;" id="tables">Tables</h1>
-
-            <table border="1">
-    <caption>Super Hero Data</caption>
-    <thead>
-        <tr>
-            <th>Super Hero</th>
-            <th>Power</th>
-            <th>Weakness</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Super Man</td>
-            <td>Super Strength, Flight</td>
-            <td>Kryptonite, magic</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Wonder Woman</td>
-            <td>Super strength, flight, combat skill, and demigod durability</td>
-            <td>Being overwhelmed by superior numbers or bound by specific constraints</td>
-        </tr>
-    </tfoot>
-</table>
-<h3>Output of Table Code</h3>
-            <p>&lt;table border="1"&gt; </p>
-            <p>&lt;caption&gt;Super Hero Data&lt;caption&gt;</p>
-
-            <p style="text-indent:20px">&lt;thead&gt;</p>
-
-            <p style="text-indent:40px">&lt;tr&gt;</p>
-
-            <p style="padding-left: 60px;">&lt;th&gt;Super Hero&lt;/th&gt; <br>
-            &lt;th&gt;Power&lt;/th&gt; <br>
-            &lt;th&gt;Weakness&lt;/th&gt;</p>
-        
-            <p style="text-indent:40px">&lt;/tr&gt;</p>
-            
-          
-
-            <p style="text-indent:20px">&lt;/thead&gt;</p> 
-
-                
-            <p style="text-indent:20px">&lt;tbody&gt;</p>
-            <p style="text-indent:40px">&lt;tr&gt;</p>
-
-
-            <p style="padding-left:60px">
-                &lt;td&gt;Super Man&lt;/td&gt; <br>
-                &lt;td&gt;Super Strength, Flight, indestructable&lt;/td&gt;<br>
-                &lt;td&gt;Kryptonite, magic&lt;/td&gt;
-
-            </p>
-            
-            <p style="text-indent:40px">&lt;/tr&gt;</p>
-
-
-            <p style="text-indent:20px">&lt;/tbody&gt</p>
-
-
-            <p style="text-indent:20px">&lt;tfoot&gt;</p>
-            <p style="text-indent:40px">&lt;tr&gt;</p>
-
-
-            <p style="padding-left:60px">
-                &lt;td&gt;Wonder Woman&lt;/td&gt; <br>
-                &lt;td&gt;Super strength, flight, combat skill, and demigod durability&lt;/td&gt;<br>
-                &lt;td&gt;Being overwhelmed by superior numbers or bound by specific constraints&lt;/td&gt;
-            </p>
-            
-            <p style="text-indent:40px">&lt;/tr&gt;</p>
-
-            <p style="text-indent:20px">&lt;/tfoot&gt;</p>
-            <p style="text-indent:20px"></p>&lt;/table&gt;</p>
+            <h1 id="tables">Tables</h1>
+            <div class="container">
+                <div>
+                    <h2>Code:</h2>
+                    <img src="tCode.png">
+                    
+                </div>
+                <div>
+                    <h2>Outcome:</h2>
+                    <img src="tOutcome.png" width="700px" height="200px">
+                </div>
+            </div>
 
             
       
 
 <hr>
+<h1>Parts of the table</h1>
+<div class="container">
+    <div>
 <p><strong>&lt;caption&gt;</strong>  represents: <br>
     <img src="caption.png" width="500px", height="100px"></p>
-    <br>
+
 <p><strong>&lt;thead&gt;</strong>  represents: <br>
     <img src="thead.png" width="500px", height="100px"></p>
     <br>
+</div>
 
+<div>
     <p><strong>&lt;tbody&gt;</strong>  represents: <br>
     <img src="tbody.png" width="500px", height="100px"></p>
-    <br>
 
     <p><strong>&lt;tfoot&gt;</strong>  represents: <br>
     <img src="tfoot.png" width="500px", height="100px"></p>
-
+</div>
+</div>
+<div class="container">
+<div>
     <p><strong>&lt;th&gt;</strong>  represents: <br>
     <img src="th.png" width="500px", height="100px"></p>
-    <br>
 
     <p><strong>&lt;tr&gt;</strong>  represents: <br>
     <img src="tr.png" width="500px", height="100px"></p>
     <br>
-
-    <p><strong>&lt;td&gt;</strong>  represents: <br>
-    <img src="td.png" width="500px", height="100px"></p>
-
-    <hr>
     </div>
+    <div>
+        <p><strong>&lt;td&gt;</strong>  represents: <br>
+    <img src="td.png" width="500px", height="100px"></p>
+</div>
+</div>
+    
+    <hr>
+
             <!--Style-->
-            <div style="background-color: #FFE8CD;">
-    <h1 style="background-color: aqua; color: rgb(255, 9, 247);text-align: center;" id="style">Adding Style HTML</h1>
-    <p style="color:blue">&lt;p style="color:blue"&gt;This is how you add color into text&lt;/p&gt;</p>
-    <p style="background-color:red">&lt;p style="background-color:red"&gt;This is how you add background color into text&lt;/p&gt;</p>
-    <p style="text-align:center">&lt;p style="text-align:center"&gt;This is how you center the text&lt;/p&gt;</p>
-    <p style="font-size:larger">&lt;p style="font-size:larger"&gt;This is how you change the size of the text&lt;/p&gt;</p>
-    <p style="background-color: aqua; color:magenta;text-align: center;font-size:larger">&lt;p style="background-color: aqua; color:magenta;text-align: center;font-size:larger"&gt;This is how you add multiple properties at once&lt;/p&gt;</p>
+<div style="background-color: #FFE8CD;">
+<h1 id="style">Adding Style HTML</h1>
+<div class="container">
+    <div>
     <h3> Styling properties</h3>
     <table border="1">
         <caption>Styling Properties</caption>
@@ -279,11 +276,15 @@
             </tr>
         </tfoot>
     </table>
-    <hr>
+    </div>
+    <div>
+        <h2>Outcome: </h2>
+    </div>
 </div>
+<hr>
     <!--iFrame-->
     <div style="background-color: #FFD6BA;">
-    <h1 style="text-align: center;" id="iframe">iFrame: Adding Videos, Music, Maps, Calendar, and X (Twitter)</h1>
+    <h1 id="iframe">iFrame: Adding Videos, Music, Maps, Calendar, and X (Twitter)</h1>
 
     <h2>Adding a video</h2>
     <p>Find the video you are looking for on YouTube<br>
@@ -337,16 +338,28 @@
 
         <hr>
         <div style="background-color: #FFDCDC;">
-        <h1 style="text-align: center;" id="span">Span Tags</h1>
-        <p>Span is used to <span style="font-size: 50px;">change the size,</span> <span style="color: red;">color</span> or any <span style="color:chartreuse;">property of text</span></span><span style="color: green;">without starting a new paragraph</span></p>
+        <h1 id="span">Span Tags</h1>
+        <p>
+            Span is used to <span style="font-size: 50px;">change the size,</span> 
+            <span style="color: red;">color</span> or any 
+            <span style="color:blue;">property of text</span></span>
+            <span style="color: green;"> without starting a new paragraph</span>
+        </p>
         <div style="text-align: center;">
-            <h3>Here is the exapmle of the code I used: </h3>
+            <h3>Here is the example of the code I used: </h3>
             <p>Span is used to &lt;span style="font-size: 50px;"&gt;change the size, &lt;/span&gt;<br>
                 &lt;span style="color: red;" &gt;color&lt;/span&gt; or any <br>
-                &lt;span style="color:chartreuse;"&gt;property of text &lt;/span&gt;<br>
+                &lt;span style="color: blue;"&gt;property of text &lt;/span&gt;<br>
                 &lt;span style="color: green;"&gt; without starting a new paragraph&lt;/span&gt;
             </p>
         </div>
        </div>
+       <hr>
+
+       <!--Semantic Elements-->
+       <div style="background-color: #FFF2EB;">
+        <h1 id="semantics">Semantic Elements: Header, Nav, Main, Article, Footer</h1>
+        <img src="semantics.png">
+        
 		</body>
 	</html>
