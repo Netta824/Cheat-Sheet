@@ -236,7 +236,7 @@
             <!--Style-->
 <div style="background-color: #FFE8CD;">
 <h1 id="style">Adding Style HTML</h1>
-<div class="container">
+
     <div>
     <h3> Styling properties</h3>
     <table border="1">
@@ -250,41 +250,42 @@
         <tbody>
             <tr>
                  <td>Text Color</td>
-                 <td>style="color:blue"</td>
+                 <td><img src="color.png"></td>
             </tr>
             <tr>
                  <td>Background Color</td>
-                 <td>style="background-color:green"</td>
+                 <td><img src="bgcolor.png"></td>
             </tr>
             <tr>
                  <td>Align the text</td>
-                 <td>style="text-aign:center"</td>
+                 <td><img src="textalign.png"></td>
             </tr>
             <tr>
                  <td>Size of the font</td>
-                 <td>style="font-size:30px"</td>
+                 <td><img src="fontsize.png"></td>
             </tr>
             <tr>
                  <td>Width</td>
-                 <td>style="width:200px"</td>
+                 <td><img src="width.png"></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                  <td>Height</td>
-                 <td>style="height:200px"</td>
+                 <td><img src="height.png"></td>
             </tr>
         </tfoot>
     </table>
-    </div>
+
     <div>
         <h2>Outcome: </h2>
+        <img src="styleOutcome.png">
     </div>
 </div>
 <hr>
     <!--iFrame-->
     <div style="background-color: #FFD6BA;">
-    <h1 id="iframe">iFrame: Adding Videos, Music, Maps, Calendar, and X (Twitter)</h1>
+    <h1 id="iframe">iFrame: Adding Videos, Music, Maps</h1>
 
     <h2>Adding a video</h2>
     <p>Find the video you are looking for on YouTube<br>
@@ -292,15 +293,20 @@
         Then click Embed<br>
         Then paste the code into your program
     </p>
+    <div class="container">
+        <div>
+            <h2>Code: </h2>
+        </div>
+        <div>
+            <h2>Outcome: </h2>
+
+        </div>
+    </div>
 
     <h3>Baby Shark</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XqZsoesa55w?si=P5BwpNC3lrF0i2HJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <h3>This is what the code looks like</h3>
-    <p>
-    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XqZsoesa55w?si=P5BwpNC3lrF0i2HJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 
-    </p>
     <h2>Adding Google Maps</h2>
     <p>Find the location you are looking for in Google Maps<br>
         Click Share <br>
@@ -309,12 +315,13 @@
     </p>
         <h3>Coliseum College Prep Academy</h3>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2176618587487!2d-122.1955024887982!3d37.761494212808515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85e112331f75%3A0x9aa6a8dd14cd05fc!2sColiseum%20College%20Prep%20Academy!5e0!3m2!1sen!2sus!4v1791923464472!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2176618587487!2d-122.1955024887982!3d37.761494212808515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85e112331f75%3A0x9aa6a8dd14cd05fc!2sColiseum%20College%20Prep%20Academy!5e0!3m2!1sen!2sus!4v1791923464472!5m2!1sen!2sus"
+         width="600" height="450" style="border:0;" 
+         allowfullscreen="" loading="lazy" 
+         referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
     <h3>This is what the code looks like</h3>
-    <p>
-        &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2176618587487!2d-122.1955024887982!3d37.761494212808515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85e112331f75%3A0x9aa6a8dd14cd05fc!2sColiseum%20College%20Prep%20Academy!5e0!3m2!1sen!2sus!4v1791923464472!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"&gt;&lt;/iframe&gt;
-    </p>
+    >
     <h2>Adding Songs from Spotify</h2>
     <p>
         Open the song you want on Spotify <br>
@@ -323,9 +330,6 @@
     </p>
     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya?utm_source=generator&si=48c0481b1d924c25" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <h3>This is what the code looks like</h3>
-    <p>
-        &lt;iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya?utm_source=generator&si=48c0481b1d924c25" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">&lt;/iframe&gt; </p>
-
         <hr>
         </div>
         <div style="background-color: blueviolet; color: aliceblue; height: 200px; text-align: center; ">
