@@ -15,7 +15,7 @@
                 }
                 .container{
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
 
                 }
             </style>
@@ -285,7 +285,7 @@
 <hr>
     <!--iFrame-->
     <div style="background-color: #FFD6BA;">
-    <h1 id="iframe">iFrame: Adding Videos, Music, Maps</h1>
+    <h1 id="iframe">iFrame: Adding Videos, Music, and Maps</h1>
 
     <h2>Adding a video</h2>
     <p>Find the video you are looking for on YouTube<br>
@@ -296,16 +296,20 @@
     <div class="container">
         <div>
             <h2>Code: </h2>
+            <img src="vidembed.png" width="700px" height="auto">
         </div>
         <div>
             <h2>Outcome: </h2>
+            <h3>Baby Shark</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XqZsoesa55w?si=P5BwpNC3lrF0i2HJ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
         </div>
     </div>
-
-    <h3>Baby Shark</h3>
-
-    <h3>This is what the code looks like</h3>
 
     <h2>Adding Google Maps</h2>
     <p>Find the location you are looking for in Google Maps<br>
@@ -313,49 +317,86 @@
         Then click Embed a map and copy HTML<br>
         Then paste the code into your program
     </p>
-        <h3>Coliseum College Prep Academy</h3>
+    <div class="container">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2176618587487!2d-122.1955024887982!3d37.761494212808515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85e112331f75%3A0x9aa6a8dd14cd05fc!2sColiseum%20College%20Prep%20Academy!5e0!3m2!1sen!2sus!4v1791923464472!5m2!1sen!2sus"
+        <div>
+            <h2>Code:</h2>
+            <img src="mapembed.png" width="700px" height="auto">
+
+        </div>
+        <div>
+            <h2>Outcome: </h2>
+            <h3>CCPA</h3>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2176618587487!2d-122.1955024887982!3d37.761494212808515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85e112331f75%3A0x9aa6a8dd14cd05fc!2sColiseum%20College%20Prep%20Academy!5e0!3m2!1sen!2sus!4v1791923464472!5m2!1sen!2sus"
          width="600" height="450" style="border:0;" 
          allowfullscreen="" loading="lazy" 
          referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-    <h3>This is what the code looks like</h3>
-    >
+        </div>
+    </div>
     <h2>Adding Songs from Spotify</h2>
     <p>
         Open the song you want on Spotify <br>
         Click the three dots next to the song you want to embed<br>
         Click share then embed track
     </p>
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya?utm_source=generator&si=48c0481b1d924c25" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <h3>This is what the code looks like</h3>
-        <hr>
+    <div class="container">
+        <div>
+            <h2>Code: </h2>
+            <img src="spotifyembed.png" width="700px" height="auto">
         </div>
-        <div style="background-color: blueviolet; color: aliceblue; height: 200px; text-align: center; ">
-            <h1 id="div">Div Tags</h1>
-            <p>This is used to divide the webpage into multiple sections. You can use style tags to create a box of any size or color, and you can have the text in whatever style</p>
-            <h2>Here's the code I used to style this section:</h2>
-            <p style="color: cyan;">&lt;div style="background-color: blueviolet; color: aliceblue; height: 200px; text-align: center;"&gt; TEXT GOES HERE &lt;/div&gt;</p>
+        <div>
+            <h2>Outcome: </h2>
+            <iframe data-testid="embed-iframe" 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya?utm_source=generator&si=48c0481b1d924c25" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"></iframe>
+
+        </div>
+    </div>
+    </div>
+
+<hr>
+
+    <!----------------------------DIV-------------------------->
+        
+        <div style="background-color:#FFD6BA;">
+            <h1>Div Tags</h1>
+            <div class="container">
+                <div>
+                    <h2>Code: </h2>
+                    <img src="divCode.png" width="700px" height="auto">
+                </div>
+                <div>
+                    <h2>Outcome: </h2>
+                    <img src="divOutcome.png" width="700px" height="auto">
+                </div>
+            </div>
+
         </div>
 
 
         <hr>
         <div style="background-color: #FFDCDC;">
         <h1 id="span">Span Tags</h1>
-        <p>
-            Span is used to <span style="font-size: 50px;">change the size,</span> 
-            <span style="color: red;">color</span> or any 
-            <span style="color:blue;">property of text</span></span>
-            <span style="color: green;"> without starting a new paragraph</span>
-        </p>
+       
         <div style="text-align: center;">
-            <h3>Here is the example of the code I used: </h3>
-            <p>Span is used to &lt;span style="font-size: 50px;"&gt;change the size, &lt;/span&gt;<br>
-                &lt;span style="color: red;" &gt;color&lt;/span&gt; or any <br>
-                &lt;span style="color: blue;"&gt;property of text &lt;/span&gt;<br>
-                &lt;span style="color: green;"&gt; without starting a new paragraph&lt;/span&gt;
-            </p>
+            <div class="container">
+                <div>
+                    <h2>Code:</h2>
+                    <img src="spanCode.png">
+                </div>
+                <div>
+                    <h2>Outcome:</h2>
+                    <img src="spanOutcome.png" width="700px" height="auto">
+                </div>
+            </div>
+            
         </div>
        </div>
        <hr>
@@ -363,7 +404,7 @@
        <!--Semantic Elements-->
        <div style="background-color: #FFF2EB;">
         <h1 id="semantics">Semantic Elements: Header, Nav, Main, Article, Footer</h1>
-        <img src="semantics.png">
+        <img src="semantic.png">
         
 		</body>
 	</html>
